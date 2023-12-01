@@ -19,7 +19,7 @@
 
 ## Interface
 
-![Main](screenshots/main.png)
+![Main](screenshots/main.png =400x)
 
 <br/>
 
