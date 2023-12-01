@@ -19,7 +19,21 @@
 
 ## Interface
 
-![Main](screenshots/main.png=400x)
+### Main Interface / homepage
+
+![main.png](screenshots/main.png)
+
+### `GET` request to a web server (ExpressJS in this case)
+
+![get-request.png](screenshots/get-request.png)
+
+### `POST` request to said server
+
+![post-request.png](screenshots/post-request.png)
+
+### New `GET` request, we see the added 4<sup>th</sup> entry in the returned JSON
+
+![get-request2.png](screenshots/get-request2.png)
 
 <br/>
 
