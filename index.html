@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>SimpleRESTClient</title>
+
+        <!-- Icon author: https://www.flaticon.com/fr/icone-gratuite/flux-de-donnees_4538380?term=flux&page=1&position=6&origin=search&related_id=4538380 -->
+        <link rel="icon" type="image/png" href="icon3.png" />
+        <!-- <link rel="icon" type="image/x-icon" href="icon.ico"/> -->
+        <link rel="stylesheet" type="text/css" href="index.css"/>
+        <script type="text/javascript" src="index.js"></script>
+    </head>
+
+    <body>
+        <header>
+            Header
+        </header>
+
+        <div id="content">
+            <h1>SimpleRESTClient</h1>
+
+            <form id="form">
+                <table>
+                    <thead>
+                    </thead>
+
+                    <tr>
+                        <td id="method">
+                            <select name="method">
+                                <option selected value="GET">GET</option>
+                                <option value="POST">POST</option>
+                                <option value="PATCH" disabled>PATCH</option>
+                                <option value="DELETE" disabled>DELETE</option>
+                            </select>
+                        </td>
+                        <td id="endpoint"><input type="text" name="endpoint" value="http://127.0.0.1:8000"></td>
+                        <td id="formDataButton">
+                            <button type="button" name="formData" title="Add JSON body to request.">Form data</button>
+                        </td>
+                        <td id="status"><span></span></td>
+                        <td id="button"><button type="button" name="send">Send</button></td>
+                    </tr>
+
+                    <tr id="formData">
+                        <td colspan="5">
+                            <!-- For some reason it doesn't detect the form dataArray if I don't add this line beforehand -->
+                            <form></form>
+                            <form id="dataArray">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th colspan="2">Parameters</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Value</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><input type="text"></td>
+                                            <td><input type="text"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text"></td>
+                                            <td><input type="text"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </form>
+
+                            <form id="dataJSON">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th colspan="2">JSON</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><textarea name="json" rows="8" cols="80"></textarea></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </form>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="5"><span id="log">Waiting for action.</span></td>
+                    </tr>
+
+                    <tr>
+                        <!-- <td id="response" colspan="5"><textarea readonly name="response" rows="8" cols="80"></textarea></td> -->
+                        <td id="response" colspan="5"><pre></pre></td>
+                    </tr>
+
+                    <tfoot>
+                    </tfoot>
+                </table>
+
+            </form>
+        </div>
+
+        <footer>
+            Footer
+        </footer>
+    </body>
+</html>

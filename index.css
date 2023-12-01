@@ -1,0 +1,122 @@
+html, body, input, select, button, textarea {
+    font-family: "calibri";
+    font-size: 17px;
+}
+
+body {
+    width: 80%;
+    margin: auto;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#content {
+    /* border: 1px solid blue; */
+    /* min-height: 500px; */
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+header, footer {
+    border: 1px solid black;
+    background: #dddddd;
+    padding: 20px;
+}
+
+table td {
+    background: #eeeeee;
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+    /* vertical-align: middle;
+    display: table-cell;
+    position: relative; */
+}
+
+#method {
+    width: 10%;
+}
+
+#method select {
+    width: 100%;
+    min-height: 35px;
+}
+
+#endpoint input {
+    width: 97%;
+    min-height: 35px;
+}
+
+#formDataButton {
+    width: 11%;
+}
+
+#status {
+    width: 11%;
+}
+
+#status span
+{
+    width: 100%;
+    min-height: 35px;
+}
+
+#button {
+    width: 10%;
+}
+
+/* #button button { */
+button {
+    width: 100%;
+    min-height: 35px;
+    background-color: #b7d4f2;
+    border-color: #9fc6ee;
+    border-style: solid;
+    cursor: pointer;
+}
+
+/* #formData {
+    display: none;
+} */
+
+#dataArray {
+    display: none;
+}
+
+/* https://meta.stackexchange.com/questions/36176/whats-the-font-used-in-code-blocks */
+ #dataJSON textarea {
+    resize: none;
+    width: 100%;
+    font-family: "consolas";
+}
+
+/* #response textarea {
+    resize: none;
+    width: 100%;
+    min-height: 450px;
+} */
+
+#response pre {
+    text-align: justify;
+    width: 100%;
+    /* word-wrap: break-all;
+    word-wrap: break-word; */
+    /* overflow-wrap: break-word; */
+    min-height: 450px;
+    /* border: 1px solid #ccc; */
+    /* padding: 5px; */
+    /* font-family: "consolas"; */
+}
+
+footer {
+    margin-top: 20px;
+}
