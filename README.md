@@ -17,6 +17,12 @@
 
 <br/>
 
+## Interface
+
+![Main](screenshots/main.png)
+
+<br/>
+
 ## Steps
 
 1) Select a Method (`GET`, `POST`, `PATCH`, `DELETE`). Only `GET` and `POST` are accessible for the moment.
